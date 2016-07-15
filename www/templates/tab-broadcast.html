@@ -1,0 +1,30 @@
+<ion-view view-title="Broadcast">
+  <ion-content class="padding">
+	
+	<button ng-click="prepare()" ng-disabled="hasStream">Prepare to broadcast</button>
+
+    <broadcaster
+      has-stream="hasStream"
+      mirror="true"
+      room-name="roomName"
+      muted="true"
+      source-id="sourceId"
+      min-width="minWidth"
+      is-broadcasting="isBroadcasting">
+	</broadcaster>
+
+    <div ng-show="hasStream">
+      <h3>Start my own room</h3>
+      <input type="text" ng-model="roomName" placeholder="Enter a new room name" />
+      <button ng-click="start()" ng-disabled="!roomName || broadcasting">Start room</button>
+
+      <p ng-show="isBroadcasting">Broadcasting. To watch connect to this server and open
+      <a href="watch.html" target="_blank">watch.html</a> page.
+      Enter the same room "{{ roomName }}" and watch this video stream.</p>
+
+      <p>Message <input type="text" ng-model="message" placeholder="Enter message" /> to peers
+      in the room <button ng-click="sendMessage()">Send</button>
+    </div>
+
+  </ion-content>
+</ion-view>

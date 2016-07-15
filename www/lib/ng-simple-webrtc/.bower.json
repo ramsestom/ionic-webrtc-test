@@ -1,0 +1,15 @@
+{
+  "name": "ng-simple-webrtc",
+  "homepage": "https://github.com/ramsestom/ng-simple-webrtc",
+  "version": "0.22.0",
+  "_release": "0.22.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.22.0",
+    "commit": "639e07eb1c979f7c24661db1071a8511113a5df5"
+  },
+  "_source": "https://github.com/ramsestom/ng-simple-webrtc.git",
+  "_target": "^0.22.0",
+  "_originalSource": "https://github.com/ramsestom/ng-simple-webrtc.git",
+  "_direct": true
+}
